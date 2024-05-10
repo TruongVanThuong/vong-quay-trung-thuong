@@ -1,0 +1,110 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-form {
+    position: fixed;
+    top: 0;
+    background-color: rgba(71, 71, 71, 0.4);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: 10;
+
+}
+
+.box-login {
+    width: 60%;
+    height: 50%;
+    padding: 1rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 7px;
+    margin-top: 100px;
+}
+
+.box-login h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.input-row {
+    margin-bottom: 1.5rem;
+}
+.input-row input {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 1rem;
+    outline: none;
+    transition: all 0.3s ease-out;
+}
+.input-row input:focus {
+    border: 1px solid #00bfa6;
+    outline: none;
+}
+.input__note textarea {
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    user-select: none;
+    resize: none;
+    padding: 1rem;
+}
+.input__note textarea:focus {
+    border: 1px solid #00bfa6;
+}
+.input-row {
+    position: relative;
+}
+.input-row:last-child {
+    margin-bottom: 0;
+}
+.input-row.success input {
+    border-color: #2ecc71;
+}
+.input-row.error input {
+    border-color: #e74c3c;
+}
+.input-row small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    visibility: hidden;
+    font-size: 12px;
+}
+.input-row.error small {
+    visibility: visible;
+}
+.btn {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 8px 15px !important;
+}
+#btn-register {
+    display: inline-block;
+    color: #fff;
+    background-color: #00bfa6;
+    border: 2px solid #00bfa6;
+    outline: 0;
+    cursor: pointer;
+    text-decoration: none !important;
+    position: relative;
+    z-index: 20;
+    overflow: hidden;
+}
