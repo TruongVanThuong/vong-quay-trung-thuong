@@ -9,42 +9,42 @@ const colors = ['#feca54', '#fff3cd', '#feca54', '#fff3cd', '#feca54', '#fff3cd'
 const listGift = [
     {
         name: 'Bút bi',
-        percent: 99 / 100,
+        percent: 15 / 100,
         image: './assets/img/product-1.png',
     },
     {
         name: 'Sổ tay',
-        percent: 1 / 100,
+        percent: 15 / 100,
         image: './assets/img/product-2.png',
     },
     {
         name: 'Ba lô',
-        percent: 0 / 100,
+        percent: 10 / 100,
         image: './assets/img/product-3.png',
     },
     {
         name: 'Nón bảo hiểm',
-        percent: 0 / 100,
+        percent: 10 / 100,
         image: './assets/img/product-4.png',
     },
     {
         name: 'Bút bi',
-        percent: 0 / 100,
+        percent: 10 / 100,
         image: './assets/img/product-1.png',
     },
     {
         name: 'Sổ tay',
-        percent: 0 / 100,
+        percent: 10 / 100,
         image: './assets/img/product-2.png',
     },
     {
         name: 'Ba lô',
-        percent: 0 / 100,
+        percent: 10 / 100,
         image: './assets/img/product-3.png',
     },
     {
         name: 'Nón bảo hiểm',
-        percent: 0 / 100,
+        percent: 20 / 100,
         image: './assets/img/product-4.png',
     },
 ];
