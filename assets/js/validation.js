@@ -5,6 +5,7 @@ let isLoggedIn = false;
 const usernameEle = document.getElementById('username');
 const emailEle = document.getElementById('email');
 const phoneEle = document.getElementById('phone');
+const seeReward = document.querySelector('.see-reward');
 
 const btnLogin = document.getElementById('btn-login');
 const inputEles = document.querySelectorAll('.input-row');
@@ -16,6 +17,7 @@ btnLogin.addEventListener('click', function () {
     let isValid = checkValidate();
 
     if (isValid) {
+        seeReward.style.display = 'block ';
         loginForm.style.display = 'none';
         isLoggedIn = true;
         alert('login thành công');

@@ -2,7 +2,9 @@
 
 
 const loginForm = document.querySelector('.login-form');
+const modalReward = document.querySelector('.modalReward');
 
+modalReward.innerHTML = 'chưa có phần thưởng!';
 const colors = ['#feca54', '#fff3cd', '#feca54', '#fff3cd', '#feca54', '#fff3cd', '#feca54', '#fff3cd'];
 const listGift = [
     {
@@ -59,6 +61,7 @@ const listGift = [
     const bottomStyle = rotate/2;
     const skewY = 90 - rotate; // Độ nghiêng của 1 item
     const renderGift = () => {
+
         listGift.forEach((item, index) => {
             const itemGift = document.createElement('li');
             itemGift.style.transform = `rotate(${rotate * index}deg) skewY(-${skewY}deg)`;
@@ -101,6 +104,10 @@ const listGift = [
                 imageUrl: gift.image,
                 imageHeight: 200
             })
+            modalReward.innerHTML = `
+            <p style="color: red; font-weight:bold">${gift.name}</p>
+            <img class="img-modal" width="100" src="${gift.image}" />
+            `;
         }, timer);
     }
     const spinner = () => {
@@ -118,6 +125,7 @@ const listGift = [
             !isRotating && spinner();
         }
     });
+    
     renderGift();
 })();
 
